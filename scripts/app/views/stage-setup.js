@@ -1,0 +1,3 @@
+/*
+Insert into this file the js file that is output from Adobe Animate
+*/
