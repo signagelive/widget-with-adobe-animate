@@ -25,7 +25,7 @@ require(['jquery', 'wdf/widget-config', 'app/views/index'], function($, WidgetCo
     var config = new WidgetConfig();
     config.on('config-initialized', function(event, data) {
         // wrapper around the Adobe Animate UI
-        _view = new IndexView({
+        var view = new IndexView({
             stageName: 'ENTER STAGE NAME HERE',
             animateCompositionId: 'ENTER ANIMATE COMPOSITION ID HERE'
         });
