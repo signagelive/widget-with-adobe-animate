@@ -19,7 +19,7 @@ require.config({
     }
 });
 
-require(['jquery', 'wdf/widget-config'], function($, WidgetConfig) {
+require(['jquery', 'wdf/widget-config', 'app/views/index'], function($, WidgetConfig, IndexView) {
 
     // load the widget configuration
     var config = new WidgetConfig();
