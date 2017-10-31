@@ -29,10 +29,10 @@ require(['jquery', 'wdf/widget-config', 'app/views/index'], function($, WidgetCo
             stageName: 'ENTER STAGE NAME HERE',
             animateCompositionId: 'ENTER ANIMATE COMPOSITION ID HERE'
         });
-        _view.on('view-initialized', function(event, data) {
+        view.on('view-initialized', function(event, data) {
 
         });
-        _view.init();
+        view.init();
     });
 
 
