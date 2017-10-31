@@ -1,4 +1,4 @@
-define(['wdf/logger', 'wdf/event-emitter'], function(logger, EventEmitter) {
+define(['wdf/event-emitter'], function(EventEmitter) {
     function AdobeAnimateLoader(compositionId, stageName) {
         var self = this;
 
@@ -10,7 +10,6 @@ define(['wdf/logger', 'wdf/event-emitter'], function(logger, EventEmitter) {
         self.stage = null;
 
         self.init = function() {
-            logger.debug('AdobeAnimateLoader.init()');
             try {
                 canvas = document.getElementById("canvas");
                 anim_container = document.getElementById("animation_container");
@@ -28,7 +27,7 @@ define(['wdf/logger', 'wdf/event-emitter'], function(logger, EventEmitter) {
                 var lib = self.composition.getLibrary();
                 loader.loadManifest(lib.properties.manifest);
             } catch (e) {
-                logger.error('Error initalizing AdobeAnimateLoader ' + e.message);
+
             }
 
         }

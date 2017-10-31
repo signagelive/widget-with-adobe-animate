@@ -30,7 +30,7 @@ require(['jquery', 'wdf/widget-config', 'app/views/index'], function($, WidgetCo
             animateCompositionId: 'ENTER ANIMATE COMPOSITION ID HERE'
         });
         _view.on('view-initialized', function(event, data) {
-            logger.debug('view-initialized');
+
         });
         _view.init();
     });

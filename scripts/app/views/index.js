@@ -6,7 +6,6 @@ define(['wdf/event-emitter', 'wdf/adobe-animate', 'app/views/stage-setup'], func
         var bindings = [];
 
         self.init = function() {
-            logger.debug('View.init()');
 
             adobeAnimate = new AdobeAnimate(config.animateCompositionId, config.stageName);
 
